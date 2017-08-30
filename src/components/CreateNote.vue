@@ -12,7 +12,7 @@
   
           <div class="modal-body">
             <slot name="body">
-              <input id="wrong" v-model="title" placeholder="title">
+              <input v-model="title" placeholder="title">
               <input v-model="content" placeholder="content">
               <button @click="create">Create Note</button>
             </slot>
@@ -95,6 +95,9 @@
 </script>
 
 <style>
+  button {
+    margin: 5%;
+  }
   .createNote {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -110,7 +113,7 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   
-  .newPost {
+  .newNote {
     border: none;
     color: gray;
     background-color: white;
@@ -151,10 +154,6 @@
   transition: all .3s ease;
   font-family: Helvetica, Arial, sans-serif;
 }
-.modal-container > * {
-  padding: 10px;
-}
-
 .modal-header h3 {
   margin-top: 0;
   color: #42b983;
