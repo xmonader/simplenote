@@ -1,0 +1,31 @@
+# project: cj6yo20nm0hxd01342c1qfn9c
+# version: 4
+
+type User implements Node {
+  id: ID! @isUnique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  username: String!
+  email: String!
+  notes: [Note!]! @relation(name: "NoteOnUser")
+}
+
+type File implements Node {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type Note implements Node {
+  title: String!
+  context: String
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  user: User @relation(name: "NoteOnUser")
+}
