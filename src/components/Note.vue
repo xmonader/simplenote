@@ -1,6 +1,7 @@
 <template>
   <div class='container'>
-    <div><h1>{{ note.title }}</h1></div>
+  <div><h1>{{ note.title }}</h1>
+</div>
     <br />
     <div>{{ note.content }} </div>
   </div>
@@ -15,10 +16,11 @@
       note: {
         type: Object,
         default: function () {
-          return { title: '', content: '' }
+          return {id:'', title: '', content: '' }
         }
       },
     },
+
   }
 </script>
 <style>

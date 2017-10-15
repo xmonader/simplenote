@@ -43,8 +43,8 @@ type Note implements Node {
 }
 ```
 
-5- `graphcool pull -p cj6yo20nm0hxd01342c1qfn9c`
-6- `graphcool endpoints` and set endpoints in main.js https://api.graph.cool/simple/v1/cj6yo20nm0hxd01342c1qfn9c to create network interface.
+- `graphcool pull -p cj6yo20nm0hxd01342c1qfn9c`
+- `graphcool endpoints` and set endpoints in main.js https://api.graph.cool/simple/v1/cj6yo20nm0hxd01342c1qfn9c to create network interface.
 
 
 ## Using this project
