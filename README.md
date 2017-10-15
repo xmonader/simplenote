@@ -1,7 +1,7 @@
 # SimpleNote app
 
 
-For starter use 
+## How to develop the backend using graphcool 
 
 - https://github.com/graphcool-examples/vue-graphql and remove project.graphcool file.
 - `graphcool init`
@@ -47,6 +47,11 @@ type Note implements Node {
 6- `graphcool endpoints` and set endpoints in main.js https://api.graph.cool/simple/v1/cj6yo20nm0hxd01342c1qfn9c to create network interface.
 
 
+## Using this project
+- clone : `$ git clone https://github.com/xmonader/simplenote`
+
+- `cd simplenote`
+- `npm install && npm build && npm start`
 
 # Techs used
 
